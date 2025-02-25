@@ -26,8 +26,5 @@ def sending_encoded_message(msg):
     print("Sent from server:",sent_from_server)
 
 
-while True:
-    inp = input("Enter something that needs to be send to the server: ")
-    sending_encoded_message(inp)
-    if inp == "Terminate":
-        break
+sending_encoded_message(f"Hello, Server. My IP Address is {client_ip_addr} and my device is {hostname}")
+sending_encoded_message("Terminate")
